@@ -2,19 +2,17 @@ import express from 'express'
 
 const app = express()
 
-app.get('/', function (req, res) {
-    res.sendFile('index.html', { root: './html' })
-})
+app.use(express.static('public'))
 
 app.get('/soma', (req, res) => {
     res.sendFile('soma.html', { root: './html' })
 })
 
-app.get('/about', (req, res) => {
+app.get('/about', (_, res) => {
     res.sendFile('about.html', { root: './html' })
 })
 
-app.get('/css', (req, res) => {
+app.get('/css', (_, res) => {
     res.sendFile('style.css', { root: './css' })
 })
 
