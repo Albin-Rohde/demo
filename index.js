@@ -6,6 +6,10 @@ app.get('/', function (req, res) {
     res.sendFile('index.html', { root: './html' })
 })
 
+app.get('/soma', (req, res) => {
+    res.sendFile('soma.html', { root: './html' })
+})
+
 app.get('/about', (req, res) => {
     res.sendFile('about.html', { root: './html' })
 })
@@ -25,5 +29,8 @@ app.get('/image', (req, res) => {
     res.sendFile('image_2.png', { root: './assets' })
 })
 
+app.get('/soma-css', (req, res) => {
+    res.sendFile('soma.css', { root: './css' })
+})
 
 app.listen(5000, () => console.log('started'))

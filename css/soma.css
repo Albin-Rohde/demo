@@ -1,0 +1,32 @@
+body {
+  background-color: aquamarine;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  text-decoration: none;
+  color: blue;
+}
