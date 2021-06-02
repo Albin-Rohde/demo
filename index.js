@@ -14,4 +14,16 @@ app.get('/css', (req, res) => {
     res.sendFile('style.css', { root: './css' })
 })
 
+app.get('/albin', (req, res) => {
+    res.sendFile('albin.html', { root: './html' })
+})
+app.get('/albin-css', (req, res) => {
+    res.sendFile('albin.css', {root: './css'})
+})
+
+app.get('/image', (req, res) => {
+    res.sendFile('image_2.png', { root: './assets' })
+})
+
+
 app.listen(5000, () => console.log('started'))
